@@ -1,0 +1,143 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+}
+
+.login-container,
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.9); /* Opaque background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+
+form h2::before,
+form h2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  background-color: #007bff;
+  transition: width 0.3s ease-in-out;
+}
+
+form h2::before {
+  left: 50%;
+}
+
+form h2::after {
+  right: 50%;
+}
+
+form h2:hover {
+  color: #007bff;
+}
+
+form h2:hover::before,
+form h2:hover::after {
+  width: 50%;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+
+form input {
+  width: 94%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+.social-login {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-login .g-signin2,
+.social-login fb\:login-button {
+  display: inline-block;
+  margin: 0 5px;
+}
+.redirect{
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 90%;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.redirect:hover{
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

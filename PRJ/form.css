@@ -1,0 +1,140 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+}
+
+.order-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.9); /* Opaque background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 560px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+
+form h2::before,
+form h2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  background-color: #007bff;
+  transition: width 0.3s ease-in-out;
+}
+
+form h2::before {
+  left: 50%;
+}
+
+form h2::after {
+  right: 50%;
+}
+
+form h2:hover {
+  color: #007bff;
+}
+
+form h2:hover::before,
+form h2:hover::after {
+  width: 50%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+
+form input,
+form select {
+  width: 87%; /* Reduced width */
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px; /* Smaller font size */
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.form-group:first-child {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+

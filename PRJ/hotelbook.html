@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a hotel</title>
+    <link rel="stylesheet" href="./hotelbook.css">
+</head>
+<body>
+    <div class="order-container">
+        <form id="hotelBookingForm">
+            <h2 style="font-size: 40px;">Book a Hotel Room</h2>
+            <br>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="phone-field">
+                        <input type="tel" id="phone" name="phone" required>
+                        <select id="phoneCountryCode" name="phoneCountryCode" required>
+                            <option value="+1">USA (+1)</option>
+                            <option value="+44">UK (+44)</option>
+                            <option value="+91">India (+91)</option>
+                            <option value="+61">Australia (+61)</option>
+                            <option value="+55">Brazil (+55)</option>
+                            <option value="+86">China (+86)</option>
+                            <option value="+33">France (+33)</option>
+                            <option value="+49">Germany (+49)</option>
+                            <option value="+81">Japan (+81)</option>
+                            <option value="+52">Mexico (+52)</option>
+                            <option value="+31">Netherlands (+31)</option>
+                            <option value="+64">New Zealand (+64)</option>
+                            <option value="+234">Nigeria (+234)</option>
+                            <option value="+47">Norway (+47)</option>
+                            <option value="+92">Pakistan (+92)</option>
+                            <option value="+48">Poland (+48)</option>
+                            <option value="+7">Russia (+7)</option>
+                            <option value="+27">South Africa (+27)</option>
+                            <option value="+82">South Korea (+82)</option>
+                            <option value="+34">Spain (+34)</option>
+                            <option value="+46">Sweden (+46)</option>
+                            <option value="+41">Switzerland (+41)</option>
+                            <option value="+66">Thailand (+66)</option>
+                            <option value="+90">Turkey (+90)</option>
+                            <option value="+380">Ukraine (+380)</option>
+                            <option value="+971">United Arab Emirates (+971)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="checkIn">Check-in Date</label>
+                    <input type="date" id="checkIn" name="checkIn" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOut">Check-out Date</label>
+                    <input type="date" id="checkOut" name="checkOut" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="roomType">Room Type</label>
+                    <select id="roomType" name="roomType" required>
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Book Room</button>
+            <p id="error-message" class="error"></p>
+        </form>
+    </div>
+    <script src="./hotelbook.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+}
+
+.order-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.error {
+    color: red;
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    width: calc(100% - 32px); /* Adjust width to accommodate the button */
+}
+
+.password-field .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.password-field .toggle-password i {
+    color: #999;
+}
+
+.password-field .toggle-password:hover i {
+    color: #333;
+}
+.phone-field{
+    display: flex;
+    flex-direction: row-reverse;
+}
